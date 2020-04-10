@@ -12,7 +12,7 @@ General
 Examples 
 
 1. - [x] String data in column names
-2. - [ ] Numeric data in column names
+2. - [x] Numeric data in column names
 3. - [ ] Many variables in column names
 4. - [ ] Multiple observations per row
 5. - [ ] Duplicated column names
