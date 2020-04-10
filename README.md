@@ -6,7 +6,7 @@ Recreating [tidyr](https://tidyr.tidyverse.org/articles/pivot.html)'s data pivot
 TODO
 
 - [ ] Make tests to match up with expected output
-- [x] Numeric data in column names
+- [x] String data in column names
 - [ ] Numeric data in column names
 - [ ] Many variables in column names
 - [ ] Multiple observations per row
