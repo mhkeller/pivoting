@@ -7,6 +7,7 @@ module.exports = function pivot(data, columns, names, values, opts) {
 			keepCols.forEach(c => {
 				row[c] = d[c];
 			});
+			// TODO, add an option to ignore if fails a truth test to approximate `values_drop_na`
 			row[names] = col;
 			row[values] = d[col];
 			long.push(row);
