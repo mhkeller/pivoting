@@ -5,6 +5,7 @@ const toInt = d => +d;
 
 const data = io.readDataSync('./tidyr/data-raw/billboard.csv');
 
+// Maybe also support regex for column names
 const result = pivot(data, columns => {
 	return columns.filter(c => c.startsWith('wk'));
 }, [['week', d => +d.replace('wk', '')]], ['rank', toInt]);
