@@ -1,4 +1,7 @@
 module.exports = function pivot(data, columns, names, values, opts) {
+	// This assumes you've loaded the data with d3-dsv
+	// so you have access to `.columns`
+	// which maybe is fine?
 	const keepCols = data.columns.filter(c => !columns.includes(c));
 	const long = [];
 	columns.forEach(col => {
