@@ -42,7 +42,10 @@ function pivot(data, cols, names, values, opts) {
 const religIncome = io.readDataSync('./tidyr/data-raw/relig_income.csv');
 
 // could also do second argument as `(col, i) => i > 0;
-const religIncomePivoted = pivot(religIncome, religIncome.columns.slice(1), ['income'], ['count']);
+const religIncomePivoted = pivot(religIncome,
+	religIncome.columns.slice(1),
+	['income'],
+	['count']);
 
 console.log(religIncomePivoted);
 
