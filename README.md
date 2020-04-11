@@ -12,7 +12,7 @@ General
 Examples
 
 1. - [x] String data in column names | [example](./1_string-data-in-column-name.js)
-2. - [x] Numeric data in column names | [example 1](./2a_numeric-data-in-column-name.js) [example 2](./2b_numeric-data-in-column-name.js)
+2. - [x] Numeric data in column names | [example 1](./2a_numeric-data-in-column-name.js), [example 2](./2b_numeric-data-in-column-name.js)
 3. - [ ] Many variables in column names
 4. - [ ] Multiple observations per row
 5. - [ ] Duplicated column names
