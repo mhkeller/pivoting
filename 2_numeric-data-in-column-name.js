@@ -26,7 +26,7 @@ function pivot(data, cols, names, values, opts) {
 			});
 			// TODO, add an option to ignore if fails a truth test to approximate `values_drop_na`
 			names.forEach(n => {
-				const nClean = Array.isArray(n) ? n : [n, q => q];
+				const nClean = Array.isArray(n) ? n.length === 1 ? [...n, q => q] : n : [n, q => q];
 				row[nClean[0]] = nClean[1](col);
 				row[values[0]] = values[1](d[col]);
 				long.push(row);
