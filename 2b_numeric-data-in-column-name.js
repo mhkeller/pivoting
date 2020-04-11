@@ -36,9 +36,9 @@ const billboardPivoted = pivot()
 	.columns(col => col.startsWith('wk'))
 	.names(['week'])
 	// transforms are matched up by index
-	.nameTransforms([d => +d.replace('wk', '')])
+	.transformNames([d => +d.replace('wk', '')])
 	.values(['rank'])
-	.valuesTransforms([toInt])
+	.transformValues([toInt])
 	.options({
 		filter: d => d.rank !== null // filter long format data
 	})(billboard);
